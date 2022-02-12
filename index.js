@@ -103,7 +103,7 @@ let employee = {
     }
 };
 employee.getWage();
-*/
+
 // Factory Function
 function createCircle(radius) {
     return {
@@ -126,3 +126,63 @@ function Circle(radius) {
  }
 }
 const another = new Circle(1);
+
+
+// from the magnus
+
+var temp = new Array();
+var str = "Hello World";
+console.log(str.split(" "));
+str.split(" ").forEach(function(val) {
+    temp.push(val.split("").reverse().join(""));
+    
+});
+console.log(temp.join(" "));
+
+// javaScript functions
+
+// function add(a, b){
+//     console.log("inside function ", arguments)
+//     return a+b;
+// }
+// console.log(add); 
+// console.log(add.lenght); // will print the number of 
+// //parameters we pass to the function
+
+// console.log(add(2, 3));
+// console.log(add.call(null, 4, 3));
+// console.log(add.apply(null, [4, 3]));
+
+// Variable hoisting in JavaScript
+
+
+
+c -> POP = procedure oriented programming language
+start -> 1
+end -> 2
+
+function add() {
+    var a = 10;
+    var b = 20;
+    var sum = a+b;
+    return sum;
+}
+add()
+
+// OOPS : Object Oriented programming
+- Classes ()
+    - Object
+        - Property
+        - Functionalities
+*/
+
+// function Person(p_firstName, p_age) {
+//    var age = p_age; // Private variable
+//     this.firstName = p_firstName; // Public Variable
+//     // this.age = p_age;
+//     this.getAge=function() {
+//         return age;
+//     }
+// }
+// var p1 = new Person("xyz", 28);
+// console.log(p1.firstName, p1.getAge());
