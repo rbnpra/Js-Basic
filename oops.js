@@ -71,20 +71,20 @@
 */
 // What is an inheritence?
 
-function Person(name, age) {
-    this.name=name;
-    this.age=age;
-}
+// function Person(name, age) {
+//     this.name=name;
+//     this.age=age;
+// }
 
-Person.prototype.greet=function() {
-    return "Hello " + this.name;
-}
+// Person.prototype.greet=function() {
+//     return "Hello " + this.name;
+// }
 
-var p1 = new Person("Mahesh", 25);
-console.log(p1.greet());
+// var p1 = new Person("Mahesh", 25);
+// console.log(p1.greet());
 
-var p2 = new Person("Rabin", 40);
-console.log(p2.greet());
+// var p2 = new Person("Rabin", 40);
+// console.log(p2.greet());
 
 // console.log(p1, p2);
 
@@ -106,25 +106,25 @@ console.log(p2.greet());
 // var e2= new Employee("RamHari", 36, 1002, "CS");
 
 // console.log(e1.e2);
-class Human {
-    constructor() {
-        this.gender = 'Male';
-    }
-    printGender() {
-        console.log(this.gender);
-    }
-}
+// class Human {
+//     constructor() {
+//         this.gender = 'Male';
+//     }
+//     printGender() {
+//         console.log(this.gender);
+//     }
+// }
 
-class Man extends Human {
-    constructor() {
-        super();
-        this.name = 'Max';
-        this.gender = "female";
-    }
-    printMyName() {
-        console.log(this.name);
-        man.printGender();
-    }
-}
-const man = new Man();
-man.printMyName();
+// class Man extends Human {
+//     constructor() {
+//         super();
+//         this.name = 'Max';
+//         this.gender = "female";
+//     }
+//     printMyName() {
+//         console.log(this.name);
+//         man.printGender();
+//     }
+// }
+// const man = new Man();
+// man.printMyName();

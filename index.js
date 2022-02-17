@@ -186,3 +186,128 @@ add()
 // }
 // var p1 = new Person("xyz", 28);
 // console.log(p1.firstName, p1.getAge());
+
+//Inheritance
+
+// function Home(Builder, year, condition) {
+//     this.Builder=Builder;
+//     this.year=year;
+//     this.condition=condition;
+// }
+// const H1 = new Home("Seapac", 2019, "Excellent" );
+// const H2 = new Home("Robinhood", 1982, "Good Condition");
+
+// console.log(H1, H2);
+
+// function Address(city, ward, country) {
+//     this.city=city;
+//     this.ward=ward;
+//     this.country=country;
+// }
+// const A1 = new Address("Madhyapur-Thimi", 10, "Nepal");
+// const A2 = new Address("Bhaktapur", 40, "Nepal")
+// console.log(A1, A2);
+
+
+// function ShrepanchamiGuthi(Name, EntryYear, MemberNumber) {
+//      this.Name=Name;
+//      this.EntryYear=EntryYear;
+//      this.MemberNumber=MemberNumber;
+// }
+
+// const S1 = new ShrepanchamiGuthi("Prem", 2019, 16);
+// const S2 = new ShrepanchamiGuthi("Rajesh", 2020, 17);
+
+// ShrepanchamiGuthi.prototype.greet=function() {
+//     return "Welcome to Guthi " + this.Name;
+// }
+// console.log(S1.greet());
+// console.log(S2.greet());
+// console.log(S1, S2);
+
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+
+// }
+// Person.prototype.greet=function() { // overriding
+//     return "Hellow " + this.name;
+// }
+
+
+
+// var p1 = new Person("Rabin", 40);
+// console.log(p1.greet());
+// var p2 = new Person("RamHari", 35);
+// console.log(p2.greet());
+
+// console.log(p1, p2);
+
+// function Employee(name, age, id, dept) {
+//     this.name=name;
+//     this.age=age;
+//     this.id=id;
+//     this.dept=dept;
+// }
+// var e1 = new Employee("Ram", 40, 221, "IT");
+// var e2 = new Employee("Hari", 35, 222, "Account");
+// console.log(e1, e2);
+
+// function add() { // Variadic function (Function overloading) (Polymorphism)
+//     var sum=0;
+//     for(var key in arguments) {
+//         sum+=arguments[key];
+//     }
+//     return sum; 
+
+// }
+// // console.log("Answer : "+ add(1,2,2, 45));
+// var money = [56, 98, 76, 32];
+// console.log(add.apply(null, money));
+
+// var wastedDaysoJan = [5, 3, 5, 8];
+// console.log(add.apply(null, wastedDaysoJan));
+
+// var values = [1, 2, 3, 7, 6, 4];
+// console.log(add.apply(null, values)); // Calling the function with apply
+
+
+
+// function PersonalInfo(Name, Address, ContactNo) {
+//     this.Name=Name;
+//     this.Address=Address;
+//     this.ContactNo=ContactNo;
+// }
+// PersonalInfo.prototype.greet=function() {
+//     return "Hello " + this.Name;
+// }
+
+// PersonalInfo.prototype.greet=function() {
+//     return "Hello There! " + this.Name;
+// }
+
+// const Per = new PersonalInfo("Suraj Ranjitkar", "Lynnwood, WA", 9841544432);
+
+// const Per1 = new PersonalInfo("Amir Prajapati", "Shoreline, WA", 987654324);
+// console.log(Per.greet());
+// console.log(Per1.greet());
+// console.log(Per, Per1);
+
+const myObject = {
+    city : 'Madrid',
+    greet() {
+        console.log(`Greetings from ${this.city}`);
+    }
+}
+myObject.greet();
+
+
+
+
+const myContry = {
+    Country : 'Nepal',
+    greet() {
+        console.log(`Namste from ${this.Country}`);
+    }
+}
+myContry.greet();

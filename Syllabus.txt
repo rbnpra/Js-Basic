@@ -1,0 +1,17 @@
+JavaScript,
+- Variables
+-Functions
+- Conditional statements
+- Loop
+- Oops
+    -Objects
+    -Classes
+    -Encapsulation
+    -Prototyping
+    -Inheritance
+    -Polymorphism
+- Garbage collection
+- Closers
+- Singleton Pattern
+- Module Pattern- Event Loop
+- Interview questions on each and every topic.
