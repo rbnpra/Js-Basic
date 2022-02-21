@@ -13,5 +13,6 @@ JavaScript,
 - Garbage collection
 - Closers
 - Singleton Pattern
-- Module Pattern- Event Loop
+- Module Pattern
+- Event Loop
 - Interview questions on each and every topic.

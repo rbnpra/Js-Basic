@@ -42,20 +42,45 @@
 //  console.log(countBy2());
 
 
+// Singleton Pattern
 
+// let DateUtil = {
+//    date:function() {
+//         return new Date().getDate();
+//     },
+//     month:function() {
+//         return new Date().getMonth();
+//     },
+//     year:function() {
+//         return new Date().getYear();
+//     },
+// }
 
-let DateUtil = {
-   date:function() {
-        return new Date().getDate();
+// console.log(DateUtil.date());
+// console.log(DateUtil.month());
+// console.log(DateUtil.year());
+
+//Module Pattern
+
+var DateTimeUtil= {
+    dateDetl: {
+        date: function() {
+            return new Date().getDate();
+        },
+        month:function() {
+            return new Date().getMonth();
+        },
+        year:function() {
+            return new Date().getFullYear();
+        }
     },
-    month:function() {
-        return new Date().getMonth();
-    },
-    year:function() {
-        return new Date().getYear();
-    },
+    timeDetl: {
+        getMinutes: function() {
+            return new Date().getMinutes();
+        }
+    }
 }
-
-console.log(DateUtil.date());
-console.log(DateUtil.month());
-console.log(DateUtil.year());
+console.log(DateTimeUtil.dateDetl.date());
+console.log(DateTimeUtil.dateDetl.month()+1);
+console.log(DateTimeUtil.dateDetl.year());
+console.log("minutes: " + DateTimeUtil.timeDetl.getMinutes());
